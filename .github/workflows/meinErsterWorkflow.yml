@@ -18,7 +18,7 @@ jobs:
               run: echo "Hello ich komme aus dem zweiten Job"
     meinDritterJob:
         needs: meinZweiterJob
-        run-on: ubuntu-latest
+        runs-on: ubuntu-latest
         steps:
             - name: derErsterSchrittVonJob3
               run: echo"${date}"
