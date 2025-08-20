@@ -9,6 +9,7 @@ jobs:
             - name: meinErsterSchritt
               run: echo "Hello World"
     meinZweiterJob:
+        needs: meinErsterJob
         runs-on: ubuntu-latest
         steps:
             - name: derErsterSchrittVonJob2
