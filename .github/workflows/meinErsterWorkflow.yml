@@ -21,4 +21,4 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: derErsterSchrittVonJob3
-              run: echo "${date}"
+              run: echo "$(date)"
